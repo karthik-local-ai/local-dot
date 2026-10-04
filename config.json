@@ -1,0 +1,33 @@
+{
+  "_readme": "Local Dot settings. base_url/model: any OpenAI-compatible server (vLLM, llama.cpp server, Ollama /v1, LM Studio). dictation_python/dictation_root: optional external dictation engine; leave blank to type instead.",
+  "base_url": "http://localhost:8000/v1",
+  "model": "qwen",
+  "timeout_seconds": 90,
+  "max_tokens": 4096,
+  "worker_limit": 2,
+  "research_tool_budget": 8,
+  "research_seconds": 300,
+  "chat_template_kwargs": {
+    "enable_thinking": true,
+    "reasoning_effort": "low"
+  },
+  "news_days": 7,
+  "feeds": [
+    {
+      "name": "Hugging Face Blog (including community/vendor posts)",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "article_hosts": [
+        "huggingface.co"
+      ]
+    },
+    {
+      "name": "NVIDIA Blog (vendor claims)",
+      "url": "https://blogs.nvidia.com/feed/",
+      "article_hosts": [
+        "blogs.nvidia.com"
+      ]
+    }
+  ],
+  "dictation_python": "",
+  "dictation_root": ""
+}

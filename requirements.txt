@@ -1,0 +1,5 @@
+# Core (text chat, memory, research, Dot's own Edge browser)
+playwright>=1.40
+# Optional: nicer terminal input in the text version
+prompt_toolkit>=3.0
+# Optional voice output: see tts-requirements.txt and SETUP.md (separate environment)

@@ -1,0 +1,8 @@
+# Optional isolated voice worker/probe, NOT base-environment dependencies of dot.py.
+# Install inside .local/kokoro-venv; it reads the existing base CUDA PyTorch.
+# Also install spaCy's en_core_web_sm (tested: 3.8.0) in that environment.
+kokoro==0.9.4
+soundfile==0.14.0
+espeakng-loader==0.2.4
+spacy==3.8.16
+sounddevice==0.5.6
